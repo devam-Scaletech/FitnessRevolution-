@@ -1184,6 +1184,9 @@
 	color: $black;
 }
 
+.text--neon-green {
+	color: $secondary;
+}
 .bg--grey {
 	@include getShadesColorClasses($grey, 'background-color');
 }

@@ -2,7 +2,6 @@
 
 //Header css
 .website__name {
-	color: $secondary;
 	letter-spacing: 5px;
 }
 
@@ -10,7 +9,7 @@
 .profile__box {
 	backdrop-filter: blur(65px);
 	background-color: #1d1d1f;
-	border: 1.5px solid $secondary;
+	border: 2px solid $secondary;
 	box-shadow: 5px 5px 30px hsla(0, 0%, 100%, 0.05);
 	margin: 22px auto;
 	width: 62%;
