@@ -138,10 +138,6 @@
 	width: 75%;
 }
 
-.width--80 {
-	width: 80%;
-}
-
 .width--16px {
 	width: 16px;
 }
@@ -301,6 +297,14 @@
 
 .m--20 {
 	@include margin(20px);
+}
+
+.m--25 {
+	@include margin(25px);
+}
+
+.m--30 {
+	@include margin(30px);
 }
 
 .mt--0 {
@@ -836,6 +840,10 @@
 	font-size: 3.125rem;
 }
 
+.font-size--60 {
+	font-size: 4.5rem;
+}
+
 .line-height--sm {
 	line-height: $line-height-sm;
 }
@@ -1187,6 +1195,10 @@
 .text--neon-green {
 	color: $secondary;
 }
+
+.text--grey-light {
+	color: rgba(255, 255, 255, 0.34);
+}
 .bg--grey {
 	@include getShadesColorClasses($grey, 'background-color');
 }
@@ -1338,4 +1350,10 @@
 .error {
 	color: getColor($red, 200);
 	@include marginTop(10px);
+}
+
+.container {
+	width: 1530px;
+	padding: 0 10px;
+	margin: 0 auto;
 }

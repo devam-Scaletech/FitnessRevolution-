@@ -1,8 +1,8 @@
 const DashboardHeader = () => {
 	return (
-		<div className='width--full flex justify-content--center mt--35'>
-			<p className='website__name font-size--30 font--bold text--neon-green'>
-				Fitness Revolution<sup>Tm</sup>
+		<div className='width--full flex justify-content--start mt--35 ml--30'>
+			<p className='font-size--25 font--bold text--neon-green'>
+				Fitness Revolution<sup>TM</sup>
 			</p>
 		</div>
 	);
