@@ -110,12 +110,26 @@
 				.body_details__box {
 					width: 167px !important;
 					padding: 10px 0px 0px 0px !important;
+
 					.body_details_content {
 						flex-direction: row;
 						justify-content: space-evenly;
 						align-items: center;
+						span {
+							margin-left: 5px;
+						}
 						.body_details_subtext {
 							margin: unset;
+						}
+					}
+				}
+
+				.body_details__box:nth-child(3) {
+					.body_details_content {
+						justify-content: space-around !important;
+
+						.body_details_subtext {
+							margin-left: 10px !important;
 						}
 					}
 				}
