@@ -13,6 +13,7 @@
 		"lint:fix": "eslint src/**/*.{tsx,ts,js,jsx} --fix"
 	},
 	"dependencies": {
+		"@ramonak/react-progress-bar": "^5.0.3",
 		"axios": "^0.27.2",
 		"crypto-js": "^4.1.1",
 		"formik": "^2.2.9",
@@ -27,6 +28,7 @@
 		"redux": "^4.2.0",
 		"redux-thunk": "^2.4.1",
 		"sass": "^1.56.1",
+		"swiper": "^9.4.1",
 		"web-vitals": "^2.1.4",
 		"yup": "^0.32.11"
 	},
