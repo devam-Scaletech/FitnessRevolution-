@@ -7,6 +7,8 @@ export interface IFitnessIcon {
 export interface IUserData {
 	userDetails: IUserDetails;
 	userActivities: IUserActivity[];
+	userSleepWeek: IUserSleepWeek;
+	userSleepActivity: IUserSleepData[];
 }
 export interface IUserDetails {
 	id: string;
@@ -39,6 +41,14 @@ export interface IUserActivity {
 	strokes?: number;
 }
 
+export interface IUserSleepWeek {
+	week: string;
+}
+export interface IUserSleepData {
+	date: string;
+	duration: number;
+	heart_rate: IHeartRate;
+}
 export interface IHeartRate {
 	average: number;
 	max: number;
@@ -75,4 +85,32 @@ export interface IReps {
 export interface IWeightLifted {
 	total: number;
 	average_per_rep: number;
+}
+
+export interface IChartData {
+	labels: string[];
+	datasets: {
+		label: string;
+		data: number[];
+		fill: boolean;
+		backgroundColor: string;
+		borderColor: string;
+		borderWidth: number;
+		barThickness: number;
+		borderRadius: number;
+	}[];
+}
+
+export interface ILineChartData {
+	labels: string[];
+	datasets: {
+		label: string;
+		data: number[];
+		fill: boolean;
+		backgroundColor: string;
+		borderColor: string;
+		borderWidth: number;
+		borderDash: number[];
+		borderDashOffset: number;
+	}[];
 }

@@ -26,7 +26,11 @@
 	background-color: #1d1d1f;
 	border: 2px solid $secondary;
 	box-shadow: 5px 5px 30px hsla(0, 0%, 100%, 0.05);
-	height: calc(100vh - 6px);
+
+	.bar-chart--container {
+		height: 272px;
+		width: 544px;
+	}
 }
 
 /*------------------Swiper css----------------------------------------------*/

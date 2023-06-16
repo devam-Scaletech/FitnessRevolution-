@@ -12,10 +12,12 @@ const DashboardContainer = () => {
 	const dispatch = useDispatch();
 	const userProfileDetails = FITNESS_DATA.user;
 	const userActivity = FITNESS_DATA.activities;
-
+	const userSleepActivity = FITNESS_DATA.sleepDataWeekly.week;
+	const userSleepActivities = FITNESS_DATA.sleepDataWeekly.activities;
 	dispatch(createAction(actionTypes.USER_DETAILS, userProfileDetails));
 	dispatch(createAction(actionTypes.USER_ACTIVITY, userActivity));
-
+	dispatch(createAction(actionTypes.USER_SLEEP_WEEK, userSleepActivity));
+	dispatch(createAction(actionTypes.USER_SLEEP_ACTIVITY, userSleepActivities));
 	return (
 		<div className='flex width--full dashboard__container'>
 			<div className='width--60  dashboard__wrapper'>

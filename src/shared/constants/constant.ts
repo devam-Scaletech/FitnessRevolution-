@@ -446,10 +446,111 @@ export const FITNESS_DATA = {
 				max: 180
 			}
 		}
-	]
+	],
+	sleepDataWeekly: {
+		week: '2023-06-12 to 2023-06-18',
+		activities: [
+			{
+				date: '2023-06-12',
+				duration: 480,
+				heart_rate: {
+					average: 60,
+					max: 80
+				}
+			},
+			{
+				date: '2023-06-13',
+				duration: 450,
+				heart_rate: {
+					average: 65,
+					max: 85
+				}
+			},
+			{
+				date: '2023-06-14',
+				duration: 500,
+				heart_rate: {
+					average: 62,
+					max: 82
+				}
+			},
+			{
+				date: '2023-06-15',
+				duration: 510,
+				heart_rate: {
+					average: 63,
+					max: 81
+				}
+			},
+			{
+				date: '2023-06-16',
+				duration: 490,
+				heart_rate: {
+					average: 61,
+					max: 79
+				}
+			},
+			{
+				date: '2023-06-17',
+				duration: 480,
+				heart_rate: {
+					average: 59,
+					max: 78
+				}
+			},
+			{
+				date: '2023-06-18',
+				duration: 460,
+				heart_rate: {
+					average: 63,
+					max: 83
+				}
+			}
+		]
+	}
 };
 
 export const formatDate = (inputDate: string) => {
-	const date = moment(inputDate).format('DD MMMM YYYY');
-	return date;
+	if (inputDate?.includes(' to ')) {
+		const startDate = moment(inputDate.split(' to ')[0]).format('DD MMMM YYYY');
+		const endDate = moment(inputDate.split(' to ')[1]).format('DD MMMM YYYY');
+		return `${startDate} to ${endDate}`;
+	} else {
+		return moment(inputDate).format('DD MMMM YYYY');
+	}
+};
+
+export const barOptions = {
+	responsive: true,
+	scales: {
+		x: {
+			grid: {
+				display: false
+			},
+			ticks: {
+				display: false
+			}
+		},
+		y: {
+			ticks: {
+				color: 'white',
+				font: {
+					weight: 'bold',
+					size: 15
+				}
+			},
+			grid: {
+				display: false
+			}
+		}
+	},
+	plugins: {
+		legend: {
+			display: false
+		},
+		title: {
+			display: false,
+			text: ''
+		}
+	}
 };
