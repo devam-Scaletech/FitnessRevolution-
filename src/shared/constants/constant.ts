@@ -7,7 +7,8 @@ export const FITNESS_DATA = {
 		email: 'johndoe@example.com',
 		age: 30,
 		height: 180,
-		weight: 75
+		weight: 75,
+		oxygen_level: 98.5
 	},
 	activities: [
 		{

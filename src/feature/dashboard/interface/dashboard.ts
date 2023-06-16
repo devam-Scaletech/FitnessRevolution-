@@ -15,6 +15,7 @@ export interface IUserDetails {
 	age: number;
 	height: number;
 	weight: number;
+	oxygen_level: number;
 }
 
 export interface IUserActivity {
