@@ -1,0 +1,2 @@
+export const USER_DETAILS = 'USER_DETAILS';
+export const USER_ACTIVITY = 'USER_ACTIVITY';

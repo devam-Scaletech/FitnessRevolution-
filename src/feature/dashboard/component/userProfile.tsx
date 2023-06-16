@@ -1,7 +1,13 @@
 import { useCallback, useEffect, useState } from 'react';
-import profilePic from 'assets/image/profilePic.jpg';
+import { useSelector } from 'react-redux';
 import { HumanBodyIcon, LocationPinIcon } from 'shared/components/icons/icons';
+import profilePic from 'assets/image/profilePic.jpg';
+import { IUserData } from '../interface/dashboard';
+
 const UserProfile = () => {
+	const userDetails = useSelector((state: IUserData) => state.userDetails);
+	const { name, weight, height, age } = userDetails;
+
 	const [greeting, setGreeting] = useState('');
 
 	const greetingMessage = useCallback(() => {
@@ -30,7 +36,9 @@ const UserProfile = () => {
 			</div>
 			<div className='flex flex--column ml--25 profile_details__wrapper'>
 				<div className='mt--20'>
-					<p className='font-size--50 text--neon-green font--semi-bold greeting_text'>{greeting}, John</p>
+					<p className='font-size--50 text--neon-green font--semi-bold greeting_text'>
+						{greeting}, {name}
+					</p>
 				</div>
 
 				<div className='flex align-items--center mt--10 location_wrapper'>
@@ -43,7 +51,7 @@ const UserProfile = () => {
 					<div className='body_details__box justify-content--center border-radius--xxl p--20 mt--30 mr--30'>
 						<div className='flex flex--column align-items--center body_details_content'>
 							<p className='font-size--60 font--medium body_details__text'>
-								52
+								{weight}
 								<span className='ml--10 font-size--30 text--grey text--grey-light font--semi-bold'>
 									kg
 								</span>
@@ -57,21 +65,21 @@ const UserProfile = () => {
 					<div className='body_details__box justify-content--center border-radius--xxl p--20 mt--30 mr--30'>
 						<div className='flex flex--column align-items--center body_details_content'>
 							<p className='font-size--60 font--medium body_details__text'>
-								170
+								{height}
 								<span className='ml--10 font-size--30 text--grey-light font--semi-bold'>cm</span>
 							</p>
 							<p className='font-size--22 font--semi-bold flex align-items--center mt--20 body_details_subtext'>
 								<HumanBodyIcon className='mr--5' />
-								Weight
+								Height
 							</p>
 						</div>
 					</div>
 					<div className='body_details__box justify-content--center border-radius--xxl p--20 mt--30 mr--30'>
 						<div className='flex flex--column align-items--center body_details_content'>
-							<p className='font-size--60 font--medium body_details__text'>21</p>
+							<p className='font-size--60 font--medium body_details__text'>{age}</p>
 							<p className='font-size--22 font--semi-bold flex align-items--center mt--20 body_details_subtext'>
 								<HumanBodyIcon className='mr--5' />
-								Weight
+								Age
 							</p>
 						</div>
 					</div>
