@@ -39,6 +39,7 @@
 	height: 320px;
 	display: flex !important;
 	justify-content: start;
+	margin: 0px 70px;
 }
 
 .swiper-slide {
@@ -53,6 +54,14 @@
 	backdrop-filter: blur(65px);
 	background-color: #1d1d1f;
 	border: 2px solid #edff64;
+}
+
+.progress-container {
+	width: 100%; /* Set the container width as needed */
+}
+
+.progress-bar--container {
+	width: 100%;
 }
 .redirect--wrapper {
 	right: 30px;

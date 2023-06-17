@@ -58,7 +58,7 @@ const FitnessActivity = () => {
 		navigate(`/activity/${activityId}`);
 	};
 	return (
-		<div className='mt--65'>
+		<div className='mt--65 flex justify-content--start'>
 			<Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
 				{userActivities.map((activities) => {
 					const { name, calories_burned, date, id } = activities;
@@ -70,16 +70,16 @@ const FitnessActivity = () => {
 							>
 								<RedirectIcon className='redirect--icon' />
 							</div>
-							<div className='flex mt--40 flex'>
-								<div className='mt--40 ml--20'>{fitnessIconMapper[id]}</div>
-								<div className='flex flex--column'>
-									<p className='text--neon-green font-size--34'>{name}</p>
-									<p className='text--grey-light font-size--20 mt--20'>
+							<div className='flex mt--40 flex activity--container'>
+								<div className='mt--40 ml--20 activity--icon'>{fitnessIconMapper[id]}</div>
+								<div className='flex flex--column ml--15'>
+									<p className='text--neon-green font-size--34 activity--name'>{name}</p>
+									<p className='text--grey-light font-size--20 mt--20 activity--date'>
 										Total Calories Burned on {formatDate(date)}
 									</p>
-									<p className='font-size--50 mt--10'>{calories_burned} / 1000</p>
+									<p className='font-size--50 mt--10 calories--text'>{calories_burned} / 1000</p>
 									<ProgressBar
-										width='500px'
+										className='progress-bar--container'
 										height='10px'
 										completed={calories_burned}
 										bgColor='#edff64'

@@ -76,7 +76,7 @@ export const HumanCycleIcon: FC<IProps> = (props) => (
 );
 
 export const StrengthIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 100 100' className={props.className || ''}>
+	<svg width='150' height='200' viewBox='0 0 100 100' className={props.className || ''}>
 		<g transform='translate(0.000000,90.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M226 816 c-101 -61 -98 -204 4 -256 l40 -20 0 -100 c0 -146 -11 -140
@@ -100,7 +100,7 @@ export const StrengthIcon: FC<IProps> = (props) => (
 );
 
 export const SwimmingIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 100 100' className={props.className || ''}>
+	<svg width='150' height='200' viewBox='0 0 100 100' className={props.className || ''}>
 		<g transform='translate(0.000000,90.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M604 656 c-47 -47 -47 -95 0 -142 47 -47 95 -47 142 0 26 26 34 42
@@ -126,7 +126,7 @@ export const SwimmingIcon: FC<IProps> = (props) => (
 );
 
 export const HikingIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 384 512' className={props.className || ''}>
+	<svg width='130' height='150' viewBox='0 0 384 512' className={props.className || ''}>
 		<path
 			d='M80.95 472.23c-4.28 17.16 6.14 34.53 23.28 38.81 2.61.66 5.22.95 7.8.95 14.33 0 27.37-9.7 31.02-24.23l25.24-100.97-52.78-52.78-34.56 138.22zm14.89-196.12L137 117c2.19-8.42-3.14-16.95-11.92-19.06-43.88-10.52-88.35 15.07-99.32 57.17L.49 253.24c-2.19 8.42 3.14 16.95 11.92 19.06l63.56 15.25c8.79 2.1 17.68-3.02 19.87-11.44zM368 160h-16c-8.84 0-16 7.16-16 16v16h-34.75l-46.78-46.78C243.38 134.11 228.61 128 212.91 128c-27.02 0-50.47 18.3-57.03 44.52l-26.92 107.72a32.012 32.012 0 0 0 8.42 30.39L224 397.25V480c0 17.67 14.33 32 32 32s32-14.33 32-32v-82.75c0-17.09-6.66-33.16-18.75-45.25l-46.82-46.82c.15-.5.49-.89.62-1.41l19.89-79.57 22.43 22.43c6 6 14.14 9.38 22.62 9.38h48v240c0 8.84 7.16 16 16 16h16c8.84 0 16-7.16 16-16V176c.01-8.84-7.15-16-15.99-16zM240 96c26.51 0 48-21.49 48-48S266.51 0 240 0s-48 21.49-48 48 21.49 48 48 48z'
 			fill='#EDFF64'
@@ -135,7 +135,7 @@ export const HikingIcon: FC<IProps> = (props) => (
 );
 
 export const MedicationIcon: FC<IProps> = (props) => (
-	<svg width='200' height='150' viewBox='0 0 512.000000 512.000000' className={props.className || ''}>
+	<svg width='150' height='120' viewBox='0 0 512.000000 512.000000' className={props.className || ''}>
 		<g transform='translate(0.000000,512.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M2448 5110 c-79 -13 -188 -52 -256 -92 -83 -48 -221 -189 -267 -271
@@ -165,7 +165,7 @@ export const MedicationIcon: FC<IProps> = (props) => (
 );
 
 export const EllipticalIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 100 100' className={props.className || ''}>
+	<svg width='150' height='200' viewBox='0 0 100 100' className={props.className || ''}>
 		<g transform='translate(0.000000,90.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M385 815 c-14 -13 -25 -36 -25 -50 0 -33 42 -75 75 -75 33 0 75 42 75 75 0 33 -42 75 -75 75 -14 0 -37 -11 -50 -25z'
@@ -194,7 +194,7 @@ export const EllipticalIcon: FC<IProps> = (props) => (
 );
 
 export const BasketBallIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 100 100' className={props.className || ''}>
+	<svg width='150' height='200' viewBox='0 0 100 100' className={props.className || ''}>
 		<g transform='translate(0.000000,90.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M445 785 c-14 -13 -25 -36 -25 -50 0 -33 42 -75 75 -75 33 0 75 42 75 75 0 33 -42 75 -75 75 -14 0 -37 -11 -50 -25z'
@@ -225,7 +225,7 @@ export const BasketBallIcon: FC<IProps> = (props) => (
 );
 
 export const PilatesIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 100 100' className={props.className || ''}>
+	<svg width='150' height='200' viewBox='0 0 100 100' className={props.className || ''}>
 		<g transform='translate(0.000000,90.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M179 781 c-39 -40 -39 -82 0 -122 20 -20 39 -29 61 -29 22 0 41 9 61 29 39 40 39 82 0 122 -40 39 -82 39 -122 0z'
@@ -244,7 +244,7 @@ export const PilatesIcon: FC<IProps> = (props) => (
 );
 
 export const RowingIcon: FC<IProps> = (props) => (
-	<svg width='200' height='200' viewBox='0 0 100 100' className={props.className || ''}>
+	<svg width='150' height='200' viewBox='0 0 100 100' className={props.className || ''}>
 		<g transform='translate(0.000000,90.000000) scale(0.100000,-0.100000)' fill='#000000' stroke='none'>
 			<path
 				d='M595 785 c-14 -13 -25 -36 -25 -50 0 -33 42 -75 75 -75 14 0 37 11
@@ -335,7 +335,7 @@ export const KickboxingIcon: FC<IProps> = (props) => (
 
 export const SoccerIcon: FC<IProps> = (props) => (
 	<svg
-		width='200'
+		width='150'
 		height='200'
 		viewBox='0 0 100 100'
 		xmlnsXlink='http://www.w3.org/1999/xlink'
