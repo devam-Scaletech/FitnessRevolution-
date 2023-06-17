@@ -514,6 +514,9 @@
 	@include marginLeft(40px);
 }
 
+.ml--60 {
+	@include marginLeft(60px);
+}
 .ml--auto {
 	@include marginLeft(auto);
 }

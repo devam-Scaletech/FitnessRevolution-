@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -29,7 +30,7 @@ import { IFitnessIcon, IUserData } from '../interface/dashboard';
 
 const FitnessActivity = () => {
 	const userActivities = useSelector((state: IUserData) => state.userActivities);
-
+	const navigate = useNavigate();
 	const fitnessIconMapper: IFitnessIcon = {
 		activity_1: <HumanWalkIcon />,
 		activity_2: <HumanCycleIcon />,
@@ -52,14 +53,21 @@ const FitnessActivity = () => {
 		activity_19: <SoccerIcon />,
 		activity_20: <CrossFitIcon />
 	};
+	const handleOnClick = (activityId: string) => {
+		console.log('activityId', activityId);
+		navigate(`/activity/${activityId}`);
+	};
 	return (
 		<div className='mt--65'>
 			<Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
 				{userActivities.map((activities) => {
 					const { name, calories_burned, date, id } = activities;
 					return (
-						<SwiperSlide key={activities.id}>
-							<div className='redirect--wrapper position--absolute'>
+						<SwiperSlide key={id}>
+							<div
+								className='redirect--wrapper position--absolute cursor--pointer'
+								onClick={() => handleOnClick(id)}
+							>
 								<RedirectIcon className='redirect--icon' />
 							</div>
 							<div className='flex mt--40 flex'>

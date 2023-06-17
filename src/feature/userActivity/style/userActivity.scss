@@ -1,0 +1,39 @@
+@import 'assets/styles/variable.scss';
+
+.back--wrapper {
+	right: 30px;
+	top: 20px;
+	.back--icon {
+		padding: 5px;
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		transform: rotate(180deg);
+		background: linear-gradient(
+			139deg,
+			#edff64 7.33%,
+			#edff64 7.34%,
+			rgba(196, 222, 0, 0.235194) 90.53%,
+			rgba(137, 155, 0, 0) 107.82%
+		);
+		box-shadow: 0px 1px 13px 1px #ffffffab;
+	}
+}
+
+//User profile
+.body_details__wrapper {
+	.body_details__box {
+		background: linear-gradient(180deg, #2e2e2e 0%, rgba(80, 80, 80, 0) 98.96%);
+		border: 3px solid #edff64;
+		width: 200px;
+		height: 165px;
+	}
+}
+
+.line-chart--container {
+	margin: 100px 30px;
+	width: 100%;
+	.line--chart {
+		height: 600px !important;
+	}
+}

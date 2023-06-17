@@ -1,12 +1,12 @@
 import { useDispatch } from 'react-redux';
 import { FITNESS_DATA } from 'shared/constants/constant';
 import * as actionTypes from 'shared/store/actionTypes';
+import { createAction } from 'shared/util/utility';
 import DashboardHeader from '../component/dashboardHeader';
 import UserProfile from '../component/userProfile';
 import UserDetails from '../component/userDetails';
 import FitnessActivity from '../component/fitnessActivity';
-import 'assets/styles/module/dashboard.scss';
-import { createAction } from 'shared/util/utility';
+import '../style/dashboard.scss';
 
 const DashboardContainer = () => {
 	const dispatch = useDispatch();
