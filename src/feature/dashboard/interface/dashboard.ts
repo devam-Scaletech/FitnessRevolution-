@@ -48,6 +48,7 @@ export interface IUserSleepData {
 	date: string;
 	duration: number;
 	heart_rate: IHeartRate;
+	label: string;
 }
 export interface IHeartRate {
 	average: number;

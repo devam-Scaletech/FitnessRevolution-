@@ -33,8 +33,7 @@ const PluseChart = () => {
 		};
 
 		userActivities.forEach((item: IUserActivity) => {
-			const formattedDate = item.name;
-			chartData.labels.push(formattedDate);
+			chartData.labels.push(item.name);
 			chartData.datasets[0].data.push(Math.trunc(item.heart_rate.average));
 		});
 

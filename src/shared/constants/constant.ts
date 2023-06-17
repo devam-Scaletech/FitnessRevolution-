@@ -1,5 +1,5 @@
 import moment from 'moment';
-
+import { ChartOptions } from 'chart.js';
 export const FITNESS_DATA = {
 	user: {
 		id: '123456',
@@ -456,7 +456,8 @@ export const FITNESS_DATA = {
 				heart_rate: {
 					average: 60,
 					max: 80
-				}
+				},
+				label: 'Monday'
 			},
 			{
 				date: '2023-06-13',
@@ -464,7 +465,8 @@ export const FITNESS_DATA = {
 				heart_rate: {
 					average: 65,
 					max: 85
-				}
+				},
+				label: 'Tuesday'
 			},
 			{
 				date: '2023-06-14',
@@ -472,7 +474,8 @@ export const FITNESS_DATA = {
 				heart_rate: {
 					average: 62,
 					max: 82
-				}
+				},
+				label: 'Wednesday'
 			},
 			{
 				date: '2023-06-15',
@@ -480,23 +483,26 @@ export const FITNESS_DATA = {
 				heart_rate: {
 					average: 63,
 					max: 81
-				}
+				},
+				label: 'Thursday'
 			},
 			{
 				date: '2023-06-16',
-				duration: 490,
+				duration: 400,
 				heart_rate: {
 					average: 61,
 					max: 79
-				}
+				},
+				label: 'Friday'
 			},
 			{
 				date: '2023-06-17',
-				duration: 480,
+				duration: 360,
 				heart_rate: {
 					average: 59,
 					max: 78
-				}
+				},
+				label: 'Saturday'
 			},
 			{
 				date: '2023-06-18',
@@ -504,7 +510,8 @@ export const FITNESS_DATA = {
 				heart_rate: {
 					average: 63,
 					max: 83
-				}
+				},
+				label: 'Sunday'
 			}
 		]
 	}
@@ -551,6 +558,53 @@ export const barOptions = {
 		title: {
 			display: false,
 			text: ''
+		},
+		tooltip: {
+			displayColors: false
+		}
+	}
+};
+
+export const lineChartOption: ChartOptions<'line'> = {
+	plugins: {
+		legend: {
+			display: false
+		},
+		tooltip: {
+			mode: 'index',
+			intersect: true,
+			displayColors: false
+		}
+	},
+	elements: {
+		line: {
+			tension: 0.4 // smooth lines
+		}
+	},
+
+	scales: {
+		x: {
+			type: 'category',
+			ticks: {
+				display: false
+			},
+			grid: {
+				display: false
+			}
+		},
+		y: {
+			type: 'linear',
+			beginAtZero: true,
+			ticks: {
+				color: 'white',
+				font: {
+					weight: 'bold',
+					size: 15
+				}
+			},
+			grid: {
+				display: false
+			}
 		}
 	}
 };
