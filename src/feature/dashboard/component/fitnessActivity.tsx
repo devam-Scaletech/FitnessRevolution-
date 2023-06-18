@@ -57,7 +57,7 @@ const FitnessActivity = () => {
 		navigate(`/activity/${activityId}`);
 	};
 	return (
-		<div className='mt--65 flex justify-content--start'>
+		<div className='mt--65 flex justify-content--start fitness-swiper--wrapper '>
 			<Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]}>
 				{userActivities.map((activities) => {
 					const { name, calories_burned, date, id } = activities;
