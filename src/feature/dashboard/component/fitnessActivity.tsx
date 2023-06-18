@@ -73,7 +73,9 @@ const FitnessActivity = () => {
 							<div className='flex mt--40 flex activity--container'>
 								<div className='mt--40 ml--20 activity--icon'>{fitnessIconMapper[id]}</div>
 								<div className='flex flex--column ml--15'>
-									<p className='text--neon-green font-size--34 activity--name'>{name}</p>
+									<p className='text--neon-green font-size--34 activity--name width--fit-content'>
+										{name}
+									</p>
 									<p className='text--grey-light font-size--20 mt--20 activity--date'>
 										Total Calories Burned on {formatDate(date)}
 									</p>

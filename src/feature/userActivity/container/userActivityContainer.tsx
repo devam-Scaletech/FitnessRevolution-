@@ -11,7 +11,7 @@ const UserActivityContainer = () => {
 	dispatch(createAction(actionTypes.USER_ACTIVITY, userActivity));
 
 	return (
-		<div>
+		<div className='user-activity--container'>
 			<UserActivity />
 		</div>
 	);
