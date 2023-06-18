@@ -2,9 +2,9 @@ import { Fragment, useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, Filler } from 'chart.js';
-import { IChartData, IUserActivity, IUserData } from '../interface/dashboard';
 import { barOptions } from 'shared/constants/constant';
 import { PulseIcon } from 'shared/components/icons/icons';
+import { IChartData, IUserActivity, IUserData } from '../interface/dashboard';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, Filler);
 
@@ -63,10 +63,10 @@ const PluseChart = () => {
 	return (
 		<Fragment>
 			<div className='flex align-items--center m--30'>
-				<p className='font-size--40 font--semi-bold '>Pulse</p>
+				<p className='font-size--40 font--semi-bold'>Pulse</p>
 				<PulseIcon />
 			</div>
-			<p className='font-size--30 font--medium ml--30 '>
+			<p className='font-size--30 font--medium ml--30'>
 				{averageHeartRateBpm} - {maxHeartRateBpm} <span className='font--bold'>bpm</span>
 			</p>
 			<Bar options={barOptions} data={chartData as IChartData} className='bar-chart--container m--30' />

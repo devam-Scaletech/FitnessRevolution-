@@ -2,7 +2,13 @@
 import * as actionTypes from 'shared/store/actionTypes';
 
 import { IAction } from 'shared/store/state';
-import { IUserData, IUserDetails, IUserActivity, IUserSleepData, IUserSleepWeek } from '../interface/dashboard';
+import {
+	IUserData,
+	IUserDetails,
+	IUserActivity,
+	IUserSleepData,
+	IUserSleepWeek
+} from '../../feature/dashboard/interface/dashboard';
 
 const initialState: IUserData = {
 	userDetails: {} as IUserDetails,

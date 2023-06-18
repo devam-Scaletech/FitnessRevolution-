@@ -13,8 +13,8 @@ import {
 } from 'chart.js';
 import { formatDate, lineChartOption } from 'shared/constants/constant';
 import { BedIcon } from 'shared/components/icons/icons';
-import { ILineChartData, IUserData, IUserSleepData } from '../interface/dashboard';
 import Spinner from 'shared/components/spinner/spinner';
+import { ILineChartData, IUserData, IUserSleepData } from '../interface/dashboard';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 

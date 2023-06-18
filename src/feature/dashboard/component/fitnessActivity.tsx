@@ -54,7 +54,6 @@ const FitnessActivity = () => {
 		activity_20: <CrossFitIcon />
 	};
 	const handleOnClick = (activityId: string) => {
-		console.log('activityId', activityId);
 		navigate(`/activity/${activityId}`);
 	};
 	return (
